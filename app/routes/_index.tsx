@@ -1,17 +1,13 @@
-import type { MetaFunction } from "@remix-run/node";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
+import NetworkStatus from "~/components/NetworkStatus";
 
 export default function Index() {
   return (
     <>
-      Index page
+      <div className="h-screen flex items-center justify-center">
+        <h1 className="text-3xl font-bold">Cat's breed</h1>
+        
+      </div>
+      <NetworkStatus />
     </>
   );
 }
-
